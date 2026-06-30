@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Leora Naturale | Dehydrated Delights",
     description: "Healthy & preservative free dehydrated snacks and herbal products from Sri Lanka.",
-    url: "https://www.leoranaturale.com",
+    url: "https://leora-naturale-website.vercel.app",
     siteName: "Leora Naturale",
     type: "website",
   },
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main>{children}</main>
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );

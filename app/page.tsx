@@ -4,7 +4,10 @@ import ProductGrid from "@/components/ProductGrid";
 import CategoryCards from "@/components/CategoryCards";
 import ProcessSection from "@/components/ProcessSection";
 import IngredientsSection from "@/components/IngredientsSection";
+import ImpactSection from "@/components/ImpactSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import BlogSection from "@/components/BlogSection";
+import CertificationsSection from "@/components/CertificationsSection";
 import FAQSection from "@/components/FAQSection";
 import ContactForm from "@/components/ContactForm";
 import NewsletterSection from "@/components/NewsletterSection";
@@ -24,7 +27,10 @@ export default function HomePage() {
       <CategoryCards />
       <ProcessSection />
       <IngredientsSection />
+      <ImpactSection />
       <TestimonialsSection />
+      <BlogSection />
+      <CertificationsSection />
       <FAQSection />
       <ContactForm />
       <NewsletterSection />

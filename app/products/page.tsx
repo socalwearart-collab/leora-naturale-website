@@ -1,4 +1,4 @@
-import ProductGrid from "@/components/ProductGrid";
+import ProductFilter from "@/components/ProductFilter";
 import FAQSection from "@/components/FAQSection";
 import { getProducts } from "@/lib/data";
 import styles from "./page.module.css";
@@ -23,11 +23,11 @@ export default function ProductsPage() {
           </p>
         </div>
       </section>
-      <ProductGrid
-        products={products}
-        title="All Products"
-        showViewAll={false}
-      />
+      <section className={`section ${styles.products}`}>
+        <div className="container">
+          <ProductFilter products={products} />
+        </div>
+      </section>
       <FAQSection />
     </>
   );
