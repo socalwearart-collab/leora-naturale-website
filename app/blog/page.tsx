@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import SiteImage from "@/components/SiteImage";
 import { getBlogPosts, formatDate } from "@/lib/data";
 import styles from "./page.module.css";
 
@@ -29,13 +29,7 @@ export default function BlogPage() {
             {posts.map((post) => (
               <Link key={post.slug} href={`/blog/${post.slug}`} className={styles.card}>
                 <div className={styles.imageWrap}>
-                  <Image
-                    src={post.image}
-                    alt={post.title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    style={{ objectFit: "cover" }}
-                  />
+                  <SiteImage src={post.image} alt={post.title} fill />
                 </div>
                 <div className={styles.body}>
                   <time dateTime={post.date}>{formatDate(post.date)}</time>

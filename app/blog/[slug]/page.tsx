@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import SiteImage from "@/components/SiteImage";
 import { notFound } from "next/navigation";
 import { getBlogPostBySlug, getBlogPosts, formatDate } from "@/lib/data";
 import styles from "./page.module.css";
@@ -41,11 +41,9 @@ export default function BlogPostPage({ params }: Props) {
           </header>
 
           <div className={styles.imageWrap}>
-            <Image
+            <SiteImage
               src={post.image}
               alt={post.title}
-              width={900}
-              height={500}
               className={styles.image}
               priority
             />

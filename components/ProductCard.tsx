@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Product, getWhatsAppOrderLink } from "@/lib/data";
+import SiteImage from "./SiteImage";
 import styles from "./ProductCard.module.css";
 
 type Props = {
@@ -12,13 +12,7 @@ export default function ProductCard({ product }: Props) {
     <article className={styles.card}>
       <Link href={`/products/${product.id}`} className={styles.imageLink}>
         <div className={styles.imageWrap}>
-          <Image
-            src={product.image}
-            alt={product.name}
-            fill
-            sizes="(max-width: 768px) 100vw, 33vw"
-            style={{ objectFit: "cover" }}
-          />
+          <SiteImage src={product.image} alt={product.name} fill />
           {!product.inStock && <span className={styles.badge}>Sold out</span>}
         </div>
       </Link>

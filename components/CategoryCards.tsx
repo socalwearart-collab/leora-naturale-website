@@ -1,22 +1,16 @@
 import Link from "next/link";
-import Image from "next/image";
+import SiteImage from "./SiteImage";
 import { getCategories } from "@/lib/data";
+import { IMAGES } from "@/lib/images";
 import styles from "./CategoryCards.module.css";
 
-const categoryImages: Record<string, string> = {
-  "Dehydrated Snacks": "https://images.unsplash.com/photo-1599490659213-e2b9527bd087?w=800&h=500&fit=crop",
-  "Herbal Wellness": "https://images.unsplash.com/photo-1505577058444-a3dab90d4253?w=800&h=500&fit=crop",
-  "Herbal Powders": "https://images.unsplash.com/photo-1615485500704-8e990f9900f7?w=800&h=500&fit=crop",
-  "Traditional Roots": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&h=500&fit=crop",
-};
-
-const categories = getCategories().map((title) => ({
-  title,
-  image: categoryImages[title] || categoryImages["Dehydrated Snacks"],
-  href: "/products",
-}));
-
 export default function CategoryCards() {
+  const categories = getCategories().map((title) => ({
+    title,
+    image: IMAGES.categories[title as keyof typeof IMAGES.categories] ?? IMAGES.logo,
+    href: "/products",
+  }));
+
   return (
     <section className={`section ${styles.section}`}>
       <div className="container">
@@ -30,7 +24,7 @@ export default function CategoryCards() {
         <div className={styles.grid}>
           {categories.map((cat) => (
             <Link key={cat.title} href={cat.href} className={styles.card}>
-              <Image src={cat.image} alt={cat.title} fill sizes="(max-width: 768px) 100vw, 25vw" style={{ objectFit: "cover" }} />
+              <SiteImage src={cat.image} alt={cat.title} fill />
               <div className={styles.overlay}>
                 <h3>{cat.title}</h3>
                 <span>Browse the full range →</span>

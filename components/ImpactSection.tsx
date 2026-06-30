@@ -1,5 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
+import SiteImage from "./SiteImage";
+import { IMAGES } from "@/lib/images";
 import styles from "./ImpactSection.module.css";
 
 export default function ImpactSection() {
@@ -26,11 +27,9 @@ export default function ImpactSection() {
           </Link>
         </div>
         <div className={styles.imageWrap}>
-          <Image
-            src="https://images.unsplash.com/photo-1464226184743-18df9e67db79?w=700&h=500&fit=crop"
+          <SiteImage
+            src={IMAGES.impact}
             alt="Sri Lankan rural community and agriculture"
-            width={560}
-            height={400}
             className={styles.image}
           />
         </div>

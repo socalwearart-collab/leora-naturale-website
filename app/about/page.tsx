@@ -1,5 +1,6 @@
-import Image from "next/image";
 import Link from "next/link";
+import SiteImage from "@/components/SiteImage";
+import { IMAGES } from "@/lib/images";
 import styles from "./page.module.css";
 
 export const metadata = {
@@ -46,11 +47,9 @@ export default function AboutPage() {
             </Link>
           </div>
           <div className={styles.imageWrap}>
-            <Image
-              src="https://images.unsplash.com/photo-1464226184743-18df9e67db79?w=700&h=800&fit=crop"
+            <SiteImage
+              src={IMAGES.aboutPage}
               alt="Natural ingredients and wellness"
-              width={560}
-              height={640}
               className={styles.image}
             />
           </div>

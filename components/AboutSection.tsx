@@ -1,5 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
+import SiteImage from "./SiteImage";
+import { IMAGES } from "@/lib/images";
 import styles from "./AboutSection.module.css";
 
 export default function AboutSection() {
@@ -7,11 +8,9 @@ export default function AboutSection() {
     <section className={`section ${styles.section}`} id="explore">
       <div className={`container ${styles.grid}`}>
         <div className={styles.imageCol}>
-          <Image
-            src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&h=900&fit=crop"
+          <SiteImage
+            src={IMAGES.about}
             alt="Fresh produce at a local market"
-            width={600}
-            height={700}
             className={styles.image}
           />
           <div className={styles.accent} />

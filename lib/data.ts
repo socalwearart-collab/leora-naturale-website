@@ -1,6 +1,8 @@
 import products from "@/data/products.json";
 import blogPosts from "@/data/blog.json";
 
+export { IMAGES } from "@/lib/images";
+
 export type Product = {
   id: string;
   name: string;
@@ -31,8 +33,7 @@ export const CONTACT_EMAIL = "leoranaturale@gmail.com";
 export const CONTACT_PHONE = "071 8147561";
 export const BRAND_TAGLINE_SINHALA = "රැකි ගුණි ස්වභාවික";
 export const BRAND_TAGLINE_EN = "Preserved Quality, Naturally";
-export const LOGO_SRC =
-  "https://raw.githubusercontent.com/socalwearart-collab/leora-naturale-website/master/public/images/logo.jpg";
+export const LOGO_SRC = "/images/logo.jpg";
 
 export function getProducts(): Product[] {
   return products as Product[];

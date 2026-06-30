@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import SiteImage from "./SiteImage";
 import { getBlogPosts, formatDate } from "@/lib/data";
 import styles from "./BlogSection.module.css";
 
@@ -23,13 +23,7 @@ export default function BlogSection() {
           {posts.map((post) => (
             <Link key={post.slug} href={`/blog/${post.slug}`} className={styles.card}>
               <div className={styles.imageWrap}>
-                <Image
-                  src={post.image}
-                  alt={post.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  style={{ objectFit: "cover" }}
-                />
+                <SiteImage src={post.image} alt={post.title} fill />
               </div>
               <div className={styles.body}>
                 <time dateTime={post.date}>{formatDate(post.date)}</time>

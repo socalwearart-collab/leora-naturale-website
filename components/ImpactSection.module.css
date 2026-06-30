@@ -19,11 +19,16 @@
   margin-top: 0.5rem;
 }
 
+.imageWrap {
+  position: relative;
+}
+
 .image {
   border-radius: var(--radius-lg);
   width: 100%;
   height: auto;
   box-shadow: var(--shadow-lg);
+  display: block;
 }
 
 @media (max-width: 768px) {

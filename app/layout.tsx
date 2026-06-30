@@ -23,8 +23,8 @@ export const metadata: Metadata = {
     "Premium dehydrated snacks and herbal wellness products from Sri Lanka. Chemical-free, nutrient-rich, artisanal quality.",
   keywords: ["dehydrated snacks", "Sri Lanka", "natural food", "herbal wellness", "Leora Naturale"],
   icons: {
-    icon: "https://raw.githubusercontent.com/socalwearart-collab/leora-naturale-website/master/public/images/logo.jpg",
-    apple: "https://raw.githubusercontent.com/socalwearart-collab/leora-naturale-website/master/public/images/logo.jpg",
+    icon: "/images/logo.jpg",
+    apple: "/images/logo.jpg",
   },
   openGraph: {
     title: "Leora Naturale | Dehydrated Delights",
@@ -32,11 +32,7 @@ export const metadata: Metadata = {
     url: "https://leora-naturale-website.vercel.app",
     siteName: "Leora Naturale",
     type: "website",
-    images: [
-      {
-        url: "https://raw.githubusercontent.com/socalwearart-collab/leora-naturale-website/master/public/images/logo.jpg",
-      },
-    ],
+    images: [{ url: "/images/logo.jpg" }],
   },
 };
 

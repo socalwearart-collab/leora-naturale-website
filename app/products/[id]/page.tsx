@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import SiteImage from "@/components/SiteImage";
 import { notFound } from "next/navigation";
 import { getProductById, getProducts, getWhatsAppOrderLink } from "@/lib/data";
 import ProductCard from "@/components/ProductCard";
@@ -41,11 +41,9 @@ export default function ProductDetailPage({ params }: Props) {
       <section className={`section ${styles.detail}`}>
         <div className={`container ${styles.grid}`}>
           <div className={styles.imageCol}>
-            <Image
+            <SiteImage
               src={product.image}
               alt={product.name}
-              width={600}
-              height={600}
               className={styles.image}
               priority
             />
