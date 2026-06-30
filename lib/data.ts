@@ -28,7 +28,7 @@ export function getProductById(id: string): Product | undefined {
 }
 
 export function getCategories(): string[] {
-  return [...new Set(getProducts().map((product) => product.category))];
+  return Array.from(new Set(getProducts().map((product) => product.category)));
 }
 
 export function getWhatsAppOrderLink(productName?: string): string {
