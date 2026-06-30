@@ -1,0 +1,62 @@
+[
+  {
+    "id": "dehydrated-jackfruit",
+    "name": "Dehydrated Jackfruit",
+    "category": "Dehydrated Snacks",
+    "description": "Enjoy pure, sun-ripened jackfruit with a unique chewy-crisp bite and natural honey-like sweetness.",
+    "price": "From Rs 850.00 LKR",
+    "image": "https://images.unsplash.com/photo-1605027990121-4753a3f3f0b8?w=600&h=600&fit=crop",
+    "featured": true,
+    "inStock": true
+  },
+  {
+    "id": "heen-bovitiya-tea",
+    "name": "Heen Bovitiya Herbal Tea",
+    "category": "Herbal Wellness",
+    "description": "Soothe your soul with floral notes and healing heritage for a peaceful evening.",
+    "price": "From Rs 650.00 LKR",
+    "image": "https://images.unsplash.com/photo-1597318181409-cf81d683f269?w=600&h=600&fit=crop",
+    "featured": true,
+    "inStock": true
+  },
+  {
+    "id": "dehydrated-bitter-gourd",
+    "name": "Dehydrated Bitter Gourd",
+    "category": "Dehydrated Snacks",
+    "description": "Crisp, airy chips preserving authentic earthy bitterness and pure holistic health.",
+    "price": "From Rs 750.00 LKR",
+    "image": "https://images.unsplash.com/photo-1594282418429-2fd9f9f5e2e5?w=600&h=600&fit=crop",
+    "featured": true,
+    "inStock": true
+  },
+  {
+    "id": "dehydrated-kohila",
+    "name": "Dehydrated Kohila",
+    "category": "Traditional Roots",
+    "description": "Connect with traditional Sri Lankan roots through our fiber-rich, dehydrated Kohila, preserved for earthy flavor and natural texture.",
+    "price": "From Rs 900.00 LKR",
+    "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=600&fit=crop",
+    "featured": true,
+    "inStock": true
+  },
+  {
+    "id": "heen-bovitiya-powder",
+    "name": "Heen Bovitiya Powder",
+    "category": "Herbal Powders",
+    "description": "Pure herbal support that mixes easily into daily drinks for a boost of natural wellness.",
+    "price": "From Rs 1,200.00 LKR",
+    "image": "https://images.unsplash.com/photo-1615485500704-8e990f9900f7?w=600&h=600&fit=crop",
+    "featured": true,
+    "inStock": true
+  },
+  {
+    "id": "banana-sesame",
+    "name": "Dehydrated Banana with Sesame Seeds",
+    "category": "Dehydrated Snacks",
+    "description": "Indulge in a perfect, naturally sweet crunch. Our sesame-encrusted dehydrated banana pieces offer a guilt-free and delightful snack fusion.",
+    "price": "From Rs 700.00 LKR",
+    "image": "https://images.unsplash.com/photo-1571771894821-ce9b6c11fe08?w=600&h=600&fit=crop",
+    "featured": true,
+    "inStock": true
+  }
+]
