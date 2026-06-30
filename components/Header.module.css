@@ -15,44 +15,10 @@
   gap: 2rem;
 }
 
-.logo {
+.logoLink {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-}
-
-.logoMark {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: var(--forest);
-  color: var(--white);
-  font-family: var(--font-heading), Georgia, serif;
-  font-size: 0.9rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-}
-
-.logoText {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2;
-}
-
-.logoText strong {
-  font-family: var(--font-heading), Georgia, serif;
-  font-size: 1.15rem;
-  color: var(--forest);
-}
-
-.logoText small {
-  font-size: 0.7rem;
-  color: var(--sage);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  flex-shrink: 0;
 }
 
 .nav {

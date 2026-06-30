@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
+import Logo from "./Logo";
+import { BRAND_TAGLINE_SINHALA } from "@/lib/data";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
@@ -18,6 +20,8 @@ export default function Hero() {
       </div>
 
       <div className={`container ${styles.content}`}>
+        <Logo variant="hero" />
+        <p className={styles.tagline}>{BRAND_TAGLINE_SINHALA}</p>
         <p className={styles.eyebrow}>Healthy &amp; Preservative Free</p>
         <h1 className={styles.title}>
           The Art of <em>Natural</em> Preservation
@@ -34,7 +38,7 @@ export default function Hero() {
             Our Story
           </Link>
         </div>
-        <a href="#explore" className={styles.scrollHint}>
+        <a href="#product-range" className={styles.scrollHint}>
           Scroll to explore
           <span>↓</span>
         </a>

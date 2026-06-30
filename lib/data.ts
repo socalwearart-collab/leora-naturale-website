@@ -29,6 +29,8 @@ export type BlogPost = {
 export const WHATSAPP_NUMBER = "940718147561";
 export const CONTACT_EMAIL = "leoranaturale@gmail.com";
 export const CONTACT_PHONE = "071 8147561";
+export const BRAND_TAGLINE_SINHALA = "රැකි ගුණි ස්වභාවික";
+export const BRAND_TAGLINE_EN = "Preserved Quality, Naturally";
 
 export function getProducts(): Product[] {
   return products as Product[];

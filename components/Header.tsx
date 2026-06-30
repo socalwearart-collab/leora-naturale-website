@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import Logo from "./Logo";
 import styles from "./Header.module.css";
 
 const navLinks = [
@@ -19,12 +20,8 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={`container ${styles.inner}`}>
-        <Link href="/" className={styles.logo} onClick={() => setMenuOpen(false)}>
-          <span className={styles.logoMark}>LN</span>
-          <span className={styles.logoText}>
-            <strong>Leora Naturale</strong>
-            <small>Dehydrated Delights</small>
-          </span>
+        <Link href="/" className={styles.logoLink} onClick={() => setMenuOpen(false)}>
+          <Logo variant="header" />
         </Link>
 
         <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ""}`}>

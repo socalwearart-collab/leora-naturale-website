@@ -1,13 +1,14 @@
 :root {
-  --forest: #1f4d2e;
-  --forest-dark: #163a22;
-  --sage: #6b8f71;
+  --forest: #2d6b3a;
+  --forest-dark: #1f4d2e;
+  --sage: #5a8f5e;
   --sage-light: #a8c5a0;
-  --cream: #faf7f0;
-  --cream-dark: #f0ebe0;
+  --cream: #f5f0e6;
+  --cream-dark: #ebe4d6;
   --gold: #c4a035;
   --gold-light: #e8d48b;
-  --earth: #5c4033;
+  --earth: #6b4423;
+  --brand-orange: #e8943a;
   --text: #2c2c2c;
   --text-muted: #5a5a5a;
   --white: #ffffff;

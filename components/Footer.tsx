@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { CONTACT_EMAIL, CONTACT_PHONE } from "@/lib/data";
+import Logo from "./Logo";
+import { CONTACT_EMAIL, CONTACT_PHONE, BRAND_TAGLINE_SINHALA } from "@/lib/data";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -8,11 +9,9 @@ export default function Footer() {
       <div className={`container ${styles.grid}`}>
         <div>
           <div className={styles.brand}>
-            <span className={styles.logoMark}>LN</span>
-            <div>
-              <strong>Leora Naturale</strong>
-              <p>Premium dehydrated snacks &amp; herbal wellness from Sri Lanka.</p>
-            </div>
+            <Logo variant="footer" />
+            <p className={styles.tagline}>{BRAND_TAGLINE_SINHALA}</p>
+            <p>Premium dehydrated snacks &amp; herbal wellness from Sri Lanka.</p>
           </div>
         </div>
 

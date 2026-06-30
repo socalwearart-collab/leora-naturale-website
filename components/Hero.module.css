@@ -31,6 +31,13 @@
   color: var(--white);
 }
 
+.tagline {
+  font-size: 1rem;
+  color: var(--sage-light);
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.02em;
+}
+
 .eyebrow {
   font-size: 0.8rem;
   font-weight: 600;

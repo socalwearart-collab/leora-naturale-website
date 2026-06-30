@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import BrandBanner from "@/components/BrandBanner";
 import AboutSection from "@/components/AboutSection";
 import ProductGrid from "@/components/ProductGrid";
 import CategoryCards from "@/components/CategoryCards";
@@ -19,6 +20,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <BrandBanner />
       <AboutSection />
       <ProductGrid
         products={featuredProducts}

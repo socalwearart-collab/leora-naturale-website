@@ -21,7 +21,7 @@ export default function ProductGrid({
       <div className="container">
         <div className={styles.header}>
           <div>
-            <span className="section-label">Our Collection</span>
+            <span className="section-label">Product Range</span>
             <h2 className="section-title">{title}</h2>
             {subtitle && <p className="section-subtitle">{subtitle}</p>}
           </div>
